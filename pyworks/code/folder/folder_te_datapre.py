@@ -5,8 +5,8 @@ import os
 import sys
 
 param={}
-param['path']="E:\\Chrome Downloads\\CWRU0325\\test\\"        #�����ļ�·��(��ȷ���ļ��д�"\\" �ⲿ��������Я���ո�)
-param['opath']="E:\\pyworks\\data\\work\\homework\\"        #����ļ�·��(��ȷ���ļ��д�"\\" �ⲿ��������Я���ո�)
+param['path']="E:\\Chrome Downloads\\CWRU0325\\test\\"        #输入文件路径(精确到文件夹带"\\" 外部输入请勿携带空格)
+param['opath']="E:\\pyworks\\data\\work\\homework\\"        #输出文件路径(精确到文件夹带"\\" 外部输入请勿携带空格)
 
 def GetParams(params,argvs):
     for i in range(len(argvs)):
@@ -32,10 +32,15 @@ if not os.path.isdir(param['opath']):
 for name in names:
     data=pd.read_csv(param['path']+name)
     for fea in Features:
-        if not data.__contains__(fea):
+        if not data.__contains__(fea):    #若输入文件不含所需列，则添加并置零
             data[fea]=Features[fea]
-    for fea in data.columns:
+    for fea in data.columns:    #若输入文件含不在所需范围内列，则删除该列
         if not Features.__contains__(fea):
             del data[fea]
+    label=name.split('0')[0].split('1')[0]
+    """
+    if Labels.__contains__(label):    #若文件为训练文件，则根据文件名添加label列，实际操作时使用已训练好模型，因此此段代码已废弃
+        data['Label']=Labels[label]    #若需重新训练，可解除该段注视
+    """
     data=data.reindex(columns=Columns)
     data.to_csv(param['opath']+name,index=False)
