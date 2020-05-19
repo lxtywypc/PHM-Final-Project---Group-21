@@ -6,7 +6,6 @@ import sys
 import joblib
 
 param={}
-            #建议使用前先过divide 如能看懂代码可按需修改
 param['model']="xxx.model"
 param['test']="X:\\xxx\\xxx\\"        #测试集文件目录(精确到目录带"\\" 外部输入请勿携带空格)
 param['opath']="xxx.csv"        #输出文件路径(精确到后缀)
@@ -23,7 +22,7 @@ def GetParams(params,argvs):
 
 
 def GetPre(fn,clf):
-    test=np.array(pd.read_csv(fn))[:,:]
+    test=np.array(pd.read_csv(fn))[:,:]    #读取测试文件全部列
     test[np.isnan(test)]=0
     return clf.predict(test)
 
@@ -33,8 +32,8 @@ def GetRes(fp,clf):
     names=os.listdir(fp)
     for name in names:
         pre=GetPre(fp+name,clf)
-        res=np.argmax([len(pre[pre==i]) for i in [0,1,2,3]])
-        temp=pd.DataFrame({'label':[res],'filename':[name.split('.csv')[0]]})
+        res=np.argmax([len(pre[pre==i]) for i in [0,1,2,3]])    #获取pre结果中最多的预测结果
+        temp=pd.DataFrame({'label':[res],'filename':[name.split('.csv')[0]]})    #按要求添加行数据
         odata=odata.append(temp,ignore_index=True)
     op=param['opath'].replace(param['opath'].split('\\')[-1],"")
     if not os.path.isdir(op):
