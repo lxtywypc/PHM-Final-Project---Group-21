@@ -1,0 +1,6 @@
+button{
+  color: white;
+  background-color: #6888d1;
+  margin-top: 33%;
+  margin-bottom: 10%;
+}

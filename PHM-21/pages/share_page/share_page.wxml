@@ -1,0 +1,2 @@
+<button>生成报表</button>
+<button bindtap="to_list">发送报表</button>

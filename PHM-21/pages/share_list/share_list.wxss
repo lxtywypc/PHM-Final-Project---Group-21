@@ -1,0 +1,35 @@
+view.title{
+  text-align: center;
+  font-size: 90rpx;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+view.select{
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+  margin-bottom: 25rpx;
+  margin-top: 25rpx;
+}
+text.name{
+  font-size: 50rpx;
+  padding: 50rpx;
+}
+button{
+  margin-top: 10%;
+  color: white;
+  background: #6888d1;
+}
+
+.slice{
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+
+.slice>.box{
+  font-size: 50rpx;
+}
+
+.s_l{
+  font-size: 30rpx;
+  margin-left: 10%;
+}

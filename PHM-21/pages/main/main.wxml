@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view style="text-align:center" >Loading</view>
+<progress class="percentage" percent="{{percent}}" show-info="true"></progress>
+<image mode="widthFix" class="imagem" src="/imag/_kurea.png" bindtap="kureavoice"></image>

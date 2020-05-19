@@ -1,0 +1,13 @@
+/* pages/others/others.wxss */
+.normal{
+  border: 1rpx solid white;
+  border-radius: 0rpx;
+}
+
+.out{
+  border: 1rpx solid white;
+  border-radius: 0rpx;
+  position: fixed;
+  bottom: 5%;
+  color: red;
+}

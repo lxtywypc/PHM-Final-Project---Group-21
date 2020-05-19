@@ -1,0 +1,28 @@
+<view class="title">账户选项</view>
+<view>
+<text>请输入昵称：</text>
+</view>
+<view class="atcenter">
+<input type="text" bindinput="nickname_input" value="{{nickname}}"></input>
+</view>
+<view>
+<text>请输入密码：</text>
+</view>
+<view class="atcenter">
+<input type="password" bindinput="password_input" value="{{pw}}"></input>
+</view>
+<text>请确认密码：</text>
+<view class="atcenter">
+<input type="password" bindinput="_password_input" value="{{_pw}}"></input>
+</view>
+<text>请选择要管理的机组：</text>
+<checkbox-group class="check-group">
+<view wx:for="{{devices}}" wx:key="device_id">
+<checkbox id="{{index}}" bindtap="check" checked="{{devices[index].checked}}">
+{{devices[index].device_id}}
+</checkbox>
+</view>
+</checkbox-group>
+<button style="width:30%" class="turnbt" bindtap="turncheck">反选</button>
+<button class="sub" bindtap="submit">更新</button>
+<button class="del" bindtap="delaccount">删除账户</button>

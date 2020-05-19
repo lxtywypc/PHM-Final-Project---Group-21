@@ -1,0 +1,34 @@
+<!--pages/useradd/useradd.wxml-->
+<view class="title">注册新用户</view>
+<view>
+<text>请输入用户名：</text>
+</view>
+<view class="atcenter">
+<input type="text" bindinput="name_input"></input>
+</view>
+<view>
+<text>请输入昵称：</text>
+</view>
+<view class="atcenter">
+<input type="text" bindinput="nickname_input"></input>
+</view>
+<view>
+<text>请输入密码：</text>
+</view>
+<view class="atcenter">
+<input type="password" bindinput="password_input"></input>
+</view>
+<text>请确认密码：</text>
+<view class="atcenter">
+<input type="password" bindinput="_password_input"></input>
+</view>
+<text>请选择要管理的机组：</text>
+<checkbox-group class="check-group">
+<view wx:for="{{devices}}" wx:key="device_id">
+<checkbox id="{{index}}" bindtap="check" checked="{{devices[index].checked}}">
+{{devices[index].device_id}}
+</checkbox>
+</view>
+</checkbox-group>
+<button style="width:30%" class="turnbt" bindtap="turncheck">反选</button>
+<button class="sub" bindtap="submit">注册</button>

@@ -1,0 +1,119 @@
+<view class="fixedcheckbox">
+    <view class="title">请选择您要查看的机组</view>
+    <view class=".list-msg" bindtap='bindShowMsg'>
+      <text class='select_text'>点击选择</text>
+    </view>
+    <view wx:if="{{select}}">
+      <checkbox-group bindchange="checkbox" class="checkboxgroup">
+        <view wx:for="{{state_list}}" wx:if="{{item.exist}}" wx:key="id">
+            <label bindtap="check" data-id="{{item.id}}">
+              <checkbox checked="{{!item.hide}}">
+                    机组{{item.device_id}}
+                </checkbox>
+            </label>
+        </view>
+      </checkbox-group>
+    </view>
+  </view>
+
+<view class="blocking"></view>
+
+<view class="" wx:if="{{state_list[0].exist}}" hidden="{{state_list[0].hide}}">
+    <view style="text-align:center">Device:{{state_list[0].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart0" canvas-id="canvas0"></canvas>
+    <image mode="widthFix" class="preimg" src="/imag/{{pre[0]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[1].exist}}" hidden="{{state_list[1].hide}}">
+    <view style="text-align:center">Device:{{state_list[1].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart1" canvas-id="canvas1"></canvas>
+    <image mode="widthFix" class="preimg" src="/imag/{{pre[1]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[2].exist}}" hidden="{{state_list[2].hide}}">
+    <view style="text-align:center">Device:{{state_list[2].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart2" canvas-id="canvas2"></canvas>
+    <image mode="widthFix" class="preimg" src="/imag/{{pre[2]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[3].exist}}" hidden="{{state_list[3].hide}}">
+    <view style="text-align:center">Device:{{state_list[3].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart3" canvas-id="canvas3"></canvas>
+    <image mode="widthFix" class="preimg" src="/imag/{{pre[3]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[4].exist}}" hidden="{{state_list[4].hide}}">
+    <view style="text-align:center">Device:{{state_list[4].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart4" canvas-id="canvas4"></canvas>
+    <image mode="widthFix" class="preimg" src="/imag/{{pre[4]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[5].exist}}" hidden="{{state_list[5].hide}}">
+    <view style="text-align:center">Device:{{state_list[5].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart5" canvas-id="canvas5"></canvas>
+    <image mode="widthFix" class="preimg" src="/imag/{{pre[5]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[6].exist}}" hidden="{{state_list[6].hide}}">
+    <view style="text-align:center">Device:{{state_list[6].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart6" canvas-id="canvas6"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[6]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[7].exist}}" hidden="{{state_list[7].hide}}">
+    <view style="text-align:center">Device:{{state_list[7].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart7" canvas-id="canvas7"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[7]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[8].exist}}" hidden="{{state_list[8].hide}}">
+    <view style="text-align:center">Device:{{state_list[8].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart8" canvas-id="canvas8"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[8]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[9].exist}}" hidden="{{state_list[9].hide}}">
+    <view style="text-align:center">Device:{{state_list[9].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart9" canvas-id="canvas9"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[9]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[10].exist}}" hidden="{{state_list[10].hide}}">
+    <view style="text-align:center">Device:{{state_list[10].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart10" canvas-id="canvas10"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[10]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[11].exist}}" hidden="{{state_list[11].hide}}">
+    <view style="text-align:center">Device:{{state_list[11].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart11" canvas-id="canvas11"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[11]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[12].exist}}" hidden="{{state_list[12].hide}}">
+    <view style="text-align:center">Device:{{state_list[12].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart12" canvas-id="canvas12"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[12]}}.png"></image>
+    </view>
+</view>
+<view class="" wx:if="{{state_list[13].exist}}" hidden="{{state_list[13].hide}}">
+    <view style="text-align:center">Device:{{state_list[13].device_id}}</view>
+    <view class="set">
+    <canvas class ="canvas" id="chart13" canvas-id="canvas13"></canvas>
+        <image mode="widthFix" class="preimg" src="/imag/{{pre[13]}}.png"></image>
+    </view>
+</view>
+

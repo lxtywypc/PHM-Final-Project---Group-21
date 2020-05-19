@@ -1,0 +1,40 @@
+/**index.wxss**/
+view.title{
+  height: 150rpx;
+  font-size: 50rpx;
+  margin-top: 130rpx;
+  text-align: center;
+}
+input{
+  width: 60%;
+  margin-top: 30rpx;
+  margin-left: 19%;
+  margin-right: 7%;
+  margin-bottom: 50rpx;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+}
+text{
+  margin-left: 7%;
+}
+button{
+  margin-top: 100rpx;
+  color: white;
+  background-color: #6888d1;
+}
+.add{
+  margin-top: 20rpx;
+  color: #060606;
+  background-color: #c6c6c6;
+}
+#up_img{
+  margin-left: 5%;
+  width:120rpx;
+  position: absolute;
+}
+#down_img{
+  margin-top: 25rpx;
+  margin-left: 5%;
+  width: 120rpx;
+  position: absolute;
+}

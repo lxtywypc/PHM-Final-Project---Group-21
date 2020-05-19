@@ -1,0 +1,15 @@
+<view class="title">选择联系人</view>
+<view>
+    <checkbox-group bindchange="selected">
+        <view class="slice" wx:for="{{list}}" wx:key="id">
+            <checkbox class="box" value="{{item.name}}">
+            {{item.name}}
+            </checkbox>            
+        </view>
+    </checkbox-group>
+</view>
+<view class="s_l">
+  已选中联系人:
+  {{l}}
+</view>
+ <button bindtap="msg">确定</button>

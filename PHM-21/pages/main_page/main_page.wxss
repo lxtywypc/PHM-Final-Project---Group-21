@@ -1,0 +1,58 @@
+view.welcome{
+  text-align: center;
+  font-size: 60rpx;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+view.info{
+  margin-left: 15%;
+  margin-bottom: 3%;
+  font-size: 50rpx;
+}
+
+image{
+  width: 32%;
+  margin-left:2%;
+}
+
+.table {
+  border: 2px solid darkgray;
+  position: fixed;
+  margin-left: 30%;
+  width:66%;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 50rpx;
+  align-items: center;
+}
+.td {
+    width:50%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: #66ccff;
+}
+.bg-g{
+  background: #66ffcc;
+}
+.th {
+  width: 50%;
+  justify-content: center;
+  background: #ffcc66;
+  color: #fff;
+  display: flex;
+  height: 50rpx;
+  align-items: center;
+}
+
+.detail{
+  display: flex;
+  align-items: center;
+  margin-top: 150rpx;
+}
+

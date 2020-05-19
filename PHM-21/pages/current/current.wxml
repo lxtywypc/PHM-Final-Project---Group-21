@@ -1,0 +1,12 @@
+<view class="title">请选择您要查看的机组</view>
+<view>
+    <checkbox-group bindchange="checkbox" class="checkboxgroup">
+     <view wx:for="{{showlist}}" wx:key="id">
+           <label bindtap="check" data-index="{{item.index}}">
+                <checkbox checked="{{item.checked}}">
+                    机组{{item.id+1}}号
+                </checkbox>
+            </label>
+        </view>
+    </checkbox-group>
+</view>

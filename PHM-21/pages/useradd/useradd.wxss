@@ -1,0 +1,45 @@
+/* pages/useradd/useradd.wxss */
+.title{
+  height: 150rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+
+button{
+  color: white;
+  background-color: #6888d1;
+}
+
+.turnbt{
+  margin-top:20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+
+input{
+  width: 80%;
+  margin-top: 20rpx;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+}
+
+text{
+  margin-left: 7%;
+}
+
+.sub{
+  margin-top: 50rpx;
+}
+.atcenter{
+  display: flex;
+  justify-content: center;
+}
+
+.check-group{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,60 @@
+.canvas{
+  width: 80%;
+  height: 400rpx;
+  z-index:-1;
+}
+
+.fixedcheckbox{
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+image{
+  height: 1500rpx;
+}
+
+.checkboxgroup{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 3.5%;
+  margin-bottom: 5%;
+}
+
+.title{
+  font-size: 60rpx;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.select_text{
+  align-items: center;
+  margin-left: 40%;
+}
+
+.blocking{
+  height: 225rpx;
+
+}
+
+.list-msg {
+    height: 60rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 0 10rpx;
+    text-align: center;
+}
+.set{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preimg{
+  width:20%;
+}

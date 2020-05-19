@@ -1,0 +1,19 @@
+<!--pages/allpre/allpre.wxml-->
+<view class="atcenter">
+<view class="table">
+<view class="tr">
+<view class="th">文件名</view>
+<view class="th">分类结果</view>
+</view>
+<block wx:for="{{pre}}" wx:key="device_id">
+<view class="tr" wx:if="{{index%2==0}}">
+<view class="td bg-g">TEST{{pre[index].id}}.csv</view>
+<view class="td bg-g">{{pre[index].data[0]}}</view>
+</view>
+<view class="tr" wx:else>
+<view class="td bg-w">TEST{{pre[index].id}}.csv</view>
+<view class="td bg-w">{{pre[index].data[0]}}</view>
+</view>
+</block>
+</view>
+</view>

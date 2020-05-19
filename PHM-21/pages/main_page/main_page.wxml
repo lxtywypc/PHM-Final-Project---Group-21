@@ -1,0 +1,22 @@
+<view class="welcome">{{nickname}}:欢迎使用！</view>
+<view class="detail">
+<image mode="widthFix" class="image" src="/imag/kirara.png" bindtap="kiraravoice"></image>
+<view class="table">
+<view class="tr">
+<view class="th">当前故障机组</view>
+<view class="th">故障类别</view>
+</view>
+<block wx:for="{{curlist}}" wx:key="device_id">
+
+<view class="tr" wx:if="{{index%2==0}}">
+<view class="td bg-g">{{curlist[index].device_id}}</view>
+<view class="td bg-g">{{errpos[curlist[index].pre]}}</view>
+</view>
+<view class="tr" wx:else>
+<view class="td bg-w">{{curlist[index].device_id}}</view>
+<view class="td bg-w">{{errpos[curlist[index].pre]}}</view>
+</view>
+
+</block>
+</view>
+</view>

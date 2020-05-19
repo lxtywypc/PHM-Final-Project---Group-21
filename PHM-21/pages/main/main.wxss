@@ -1,0 +1,71 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.percentage{
+  width: 90%;
+  margin: 5%;
+  justify-content: center;
+}
+
+.imagem{
+  animation: imagemove 2000ms infinite;
+  animation-fill-mode: none;
+}
+
+@keyframes imagemove{
+0% {
+  width:60%;
+  position: fixed;
+  left: 20%;
+  bottom: 5%;
+}
+12% {
+  width:60%;
+  position: fixed;
+  left: 20%;
+  bottom: 10%;
+}
+24% {
+  width:60%;
+  position: fixed;
+  left: 20%;
+  bottom: 5%;
+}
+36% {
+  width:60%;
+  position: fixed;
+  left: 20%;
+  bottom: 10%;
+}
+48% {
+  width:60%;
+  position: fixed;
+  left: 20%;
+  bottom: 5%;
+}
+100%{
+  width:60%;
+  position: fixed;
+  left: 20%;
+  bottom: 5%;
+}
+}

@@ -1,0 +1,16 @@
+<!--pages/addindex/addindex.wxml-->
+<view class="title">用户辅助注册认证</view>
+<view>
+<text>请使用任一已注册账户登录认证：</text>
+</view>
+<view>
+<text>请输入用户名：</text>
+</view>
+<image mode="widthFix" id="up_img" src="/imag/kurea.png"></image>
+<input type="text" bindinput="name_input" value="{{name}}"></input>
+<view>
+<text>请输入密码：</text>
+</view>
+<image mode="widthFix" id="down_img" src="/imag/key.png"></image>
+<input type="password" bindinput="password_input" value="{{pw}}"></input>
+<button bindtap="to_main">登录</button>

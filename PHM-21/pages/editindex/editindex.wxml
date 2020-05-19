@@ -1,0 +1,9 @@
+<!--pages/editindex/editindex.wxml-->
+<!--pages/addindex/addindex.wxml-->
+<view class="title">用户认证</view>
+<view>
+<text>请输入密码：</text>
+</view>
+<image mode="widthFix" id="down_img" src="/imag/key.png"></image>
+<input type="password" bindinput="password_input" value="{{pw}}"></input>
+<button bindtap="to_main">认证</button>

@@ -1,0 +1,5 @@
+<!--pages/others/others.wxml-->
+<button class="normal" style="width:100%" id="share_page" bindtap="gotoPage">分享</button>
+<button class="normal" style="width:100%" id="allpre" bindtap="gotoPage">查看所有预测结果</button>
+<button class="normal" style="width:100%" id="editindex" bindtap="gotoPage">账户选项</button>
+<button class="out" style="width:100%" bindtap="logout">退出登录</button>
